@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoTrack Live</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+
+<link rel="stylesheet"
+href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">
+        EcoTrack
+    </div>
+
+    <nav>
+
+        <a href="PrincipalPage.html">Home</a>
+
+        <a href="PostPage.html">News</a>
+
+        <a href="handcraftPage.html">Handcraft</a>
+
+        <a href="map.html" class="activo">Map</a>
+
+    </nav>
+
+</header>
+
+<div class="contenedor">
+
+    <!-- Panel izquierdo -->
+
+    <aside class="izquierda">
+
+        <h2>🚛 Trucks</h2>
+
+        <div class="card">
+            Truck EA-021
+            <br>
+            🟢 Active
+        </div>
+
+        <div class="card">
+            Truck EA-034
+            <br>
+            🟢 Active
+        </div>
+
+        <div class="card">
+            Truck EA-018
+            <br>
+            🟡 Next Route
+        </div>
+
+        <h2>♻ Recycling Centers</h2>
+
+        <div class="card">
+            Santa Ana Center
+        </div>
+
+        <div class="card">
+            Metrocentro
+        </div>
+
+    </aside>
+
+    <!-- MAPA -->
+    <main>
+        <div class="tituloMapa">
+             <h2>🚛 EcoTrack Live Map</h2>
+             <p>Real-time garbage truck routes in Santa Ana, El Salvador.</p>
+        </div>
+
+         <iframe
+             src="https://www.google.com/maps?q=Santa+Ana,+El+Salvador&output=embed"
+            width="100%"
+            height="650"
+            style="border:0; border-radius:15px;"
+            loading="lazy">
+          </iframe>
+
+    </main>
+
+    <!-- Panel derecho -->
+
+    <aside class="derecha">
+
+        <h2>⚠ Reports</h2>
+
+        <div class="card">
+            Parque Libertad
+            <br>
+            Garbage accumulation
+        </div>
+
+        <div class="card">
+            Mercado Central
+            <br>
+            Full container
+        </div>
+
+        <div class="card">
+            Lago de Coatepeque
+            <br>
+            Plastic waste
+        </div>
+
+        <h2>📊 Statistics</h2>
+
+        <div class="card">
+            🚛 Trucks: 5
+            <br><br>
+
+            🌳 Volunteers: 185
+            <br><br>
+
+            ♻ Recycled:
+            18,540 kg
+        </div>
+
+    </aside>
+
+</div>
+
+<script src="JavaScript/Script.js"></script>
+
+</body>
+</html>
