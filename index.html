@@ -3,52 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EcoTrack</title>
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <title>Log in</title>
+
+    <link rel="stylesheet" href="assets/css/index.css">
 </head>
-<body class="cuerpoIndex">
-    <!--titulo-->
-    <div>
-        <h1 class="titulo">EcoTrack</h1>
-        <h3 class="eslogan">Let´s help the planet together, <br>
-             one step at a time</h3>
-    </div>
+<body class="cuerpo-Index">
 
-    <div>
-        <!--Conenedor del Log In-->
-        <div class="contenedor-base">
-            <h2>Log In</h2>
-            <!--Formulario-->
-            <form action="components/PrincipalPage.html" class="formulario-LogIn">
-                <input type="email" placeholder="Example@gmail.com">
+    <div class="contenedor-Login">
 
-                <input type="password" placeholder="password">
+        <!--Logo, collage, slogan-------------------------------------------------------------->
+        <section class="izquierda-Login">
 
-                <input type="submit" value="Log in" class="bton-LogIn">
+            <!--Logo-->
+            <img src="#" alt="Eco Logo" class="logo">
 
-            </form>
+            <!--Eslogan-->
+            <h2>Let´s help<br>
+                the planet<br>
+                together,<br>one <span>Track</span> at a time
+            </h2>
 
-            <button class="bton-flotante" onclick="BtonPassword()">Reestore your password</button>
+            <img src="#" alt="Collage" class="collage">
 
-            <!--INiciar sesion con otros-->
-            <p>Log In with others</p>
+        </section>
 
-            <div class="Others-ways">
-            <!--imagenes de google y microsoft-->
+        <!--Formulario-------------------------------------------------------------------------->
+        <section class="derecha">
 
-                <img src="" alt="google">
-                <img src="" alt="microsoft">
+            <div class="login">
+
+                <h2>Log in to EcoTrack</h2>
+
+
+                <form action="components/PrincipalPage.html">
+
+                    <input type="text" placeholder="Email or Phone number">
+
+                    <input type="password" placeholder="password">
+
+                    <input type="submit" value="Log in" class="botoncito">
+                </form>
+
+                <a href="components/changepassword.html">Forgotten password?</a>
+
+                <button class="crear">
+                    Create new account
+                </button>
+
+                <p class="meta">
+                    ®EcoTrack
+                </p>
             </div>
-
-             <!--Crear cuenta-->
-            <div>
-                <p>You don't have an account?</p>
-                <button class="createAccount" onclick="BotonMover()">Create an account</button>
-            </div>
-
-        </div>
+        </section>
 
     </div>
-<script src="JavaScript/Script.js"></script>
+    
 </body>
 </html>
