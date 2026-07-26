@@ -185,7 +185,7 @@ input:focus{
 .cuerpo-changepassword{
     display: flex;
     align-items: center;
-    background-color: rgb(235, 243, 243);
+    background-color: rgb(232, 236, 236);
     height: 100vh;
     align-items: center;
     justify-content: center;
@@ -248,3 +248,51 @@ input:focus{
 }
 
 /*------------------------------------Final de ChangePassword.html-------------------------------------*/
+
+/*----------------------------------Inicio de ReestorePassword.html------------------------------------*/
+
+.Cuerpo-ReestorePAssword{
+    background-color: rgb(232, 236, 236);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#texto{
+    margin-bottom:25px;
+    font-size:22px;
+    font-weight:500;
+}
+
+#tx-mail{
+    margin-bottom: 10px;
+}
+
+
+#formulario-Mago{
+    display: none;
+    flex-direction: column;
+}
+
+
+#formularioprueba{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 5%
+}
+
+.input-code{
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    font-size: 24px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: 0.2s;
+}
+
+/*--------------------------------Final de ReestorePassword.html----------------------------------------*/
