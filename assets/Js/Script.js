@@ -2,7 +2,7 @@
 
  //-------------------------------cambios de pagina (navigate)---------------------------------------------
 function BotonMover(){
-    window.location.href = "createAccount.html"
+    window.location.href = "components/CreateAccount.html"
 }
 
 function BtonPassword(){
