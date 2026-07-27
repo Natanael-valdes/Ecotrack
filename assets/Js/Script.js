@@ -10,7 +10,7 @@ function BtonPassword(){
 }
 
 function btonChange(){
-    window.location.href = "PrincipalPage.html"
+    window.location.href = "Home.html"
 }
 
 function mostrarfom(){

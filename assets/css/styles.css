@@ -1,3 +1,40 @@
+/*Clases generales (Headers y cuerpo general para paginas de uso diario)*/
+
+/*Cuerpos*/
+.cuerpo{
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/*Encabezado y menu*/
+.encabezado{
+    background-color: #2d935e;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.encabezado h2{
+    color: white;
+}
+
+.encabezado ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+/*Menu del header*/
+.menu{
+    color: white;
+    text-decoration: none;
+}
+
+.menu:hover{
+    text-decoration: underline;
+}
+ 
+
 /*------------------------------------------Inicio de Index.html-----------------------------------------*/
 
 /*Cuerpo*/
