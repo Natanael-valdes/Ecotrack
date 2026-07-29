@@ -61,9 +61,10 @@
 
 /*Logo EcoTrack*/
 .logo{
-    width:60px;
-    margin-bottom:40px;
+    width: 200px;    
+    height: 200px;
 }
+
 
 /*Eslogan*/
 .izquierda-Login h2{
@@ -80,7 +81,7 @@
 /*Collage*/
 .collage{
     position:absolute;
-    width:420px;
+    width:350px;
     right:40px;
     top:90px;
 }
@@ -332,4 +333,3 @@ input:focus{
     transition: 0.2s;
 }
 
-/*--------------------------------Final de ReestorePassword.html----------------------------------------*/
