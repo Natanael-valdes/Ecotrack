@@ -34,7 +34,81 @@
     text-decoration: underline;
 }
  
+/*Span o negrita*/
+span{
+    color:#2d935e;
+}
 
+/*Footer*/
+.main-footer {
+  background-color: #2d5a27; /* Verde oscuro acorde a la marca */
+  color: #ffffff;
+  padding-top: 40px;
+  margin-top: 60px; /* Separación con respecto al contenido superior */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.footer-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px 30px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 220px;
+}
+
+.footer-section h3 {
+  font-size: 1.5rem;
+  margin-bottom: 12px;
+  color: #a8e6cf; /* Verde menta claro para destacar títulos */
+}
+
+.footer-section h4 {
+  font-size: 1.1rem;
+  margin-bottom: 12px;
+  color: #a8e6cf;
+}
+
+.footer-section p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #e0e0e0;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  margin-bottom: 8px;
+}
+
+.footer-links a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer-links a:hover {
+  color: #a8e6cf; /* Cambia a verde menta al pasar el mouse */
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  background-color: #1e3d1a; /* Verde aún más oscuro para el contraste final */
+  text-align: center;
+  padding: 15px 20px;
+  font-size: 0.85rem;
+  color: #cccccc;
+}
 /*------------------------------------------Inicio de Index.html-----------------------------------------*/
 
 /*Cuerpo*/
@@ -61,8 +135,9 @@
 
 /*Logo EcoTrack*/
 .logo{
-    width: 200px;    
-    height: 200px;
+    width: 100px;    
+    height: 100px;
+    margin-bottom: 150px;
 }
 
 
@@ -74,15 +149,11 @@
     color:#111;
 }
 
-.izquierda-Login span{
-    color:#2d935e;
-}
-
 /*Collage*/
 .collage{
     position:absolute;
     width:350px;
-    right:40px;
+    right: 70px;
     top:90px;
 }
 
@@ -333,3 +404,236 @@ input:focus{
     transition: 0.2s;
 }
 
+/*-------------------------------Final de ReestorePassword.html---------------------------------------*/
+
+/*-------------------------------Home-----------------------------------------------------------------*/
+
+/*---------------------------------FinalHome-----------------------------------------------------------*/
+
+/*-----------------------------------Inicio de Pospage.html--------------------------------------------*/
+
+/*Contenedor de toda la pagina*/
+.post-contenedor{    
+    display:flex;
+    flex-direction: column;
+    gap:25px;
+    padding:25px;
+}
+
+.feed{
+    width: 75%;
+}
+
+.post-box{
+  background: white;
+  padding: 15px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.20);
+}
+
+.post-box input[type="text"] {
+  width: 500px;
+  padding: 10px;
+  border-radius: 25px;
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+}
+
+.post-box input[type="text"]:focus {
+  border-color: #1877f2;
+}
+
+.post-box input[type="file"] {
+  margin-bottom: 10px;
+
+}
+
+.post-box button {
+  width: 200px;
+  padding: 10px;
+  border: none;
+  background-color: #6B9071;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.post-box button:hover {
+  background-color: #375534;
+}
+
+.postBtn{
+    color: white;
+    background-color: #6B9071;
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    width: 318px;
+}
+
+.postBtn:hover{
+    background-color: #375534;
+}
+
+.post {
+  background: white;
+  padding: 15px;
+  border-radius: 12px;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  animation: fadeIn 0.3s ease;
+}
+
+.post h4 {
+  margin: 0 0 8px;
+}
+
+.post p {
+  margin: 0 0 10px;
+}
+
+
+.delete-btn {
+  background-color: #e4e6eb;
+  color: #050505;
+  border: none;
+  padding: 6px 12px;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: 0.2s;
+}
+
+.delete-btn:hover {
+  background-color: #d8dadf;
+}
+
+.post img {
+  max-width: 100%;
+  border-radius: 10px;
+  margin-top: 10px;
+  object-fit: cover;
+}
+
+/* Estilo para el label que sustituye al input file */
+.custom-file-upload {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #689071;      /* Mismo color que el botón Publicar */
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-bottom: 10px;            /* Mantiene el margen que tenías antes */
+    border: none;
+    transition: background-color 0.2s;
+}
+
+.custom-file-upload:hover {
+    background-color: #375534;      /* Mismo hover que el otro botón */
+}
+
+/* Ocultar el input real pero manteniéndolo accesible */
+.custom-file-upload input[type="file"] {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+
+/*---------------------------------------Inicio de About Us---------------------------------------*/
+
+
+/*1.Centrar y dar ancho máximo al contenido */
+.contenedor1about{
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+
+}
+/* 2. Sección del Titulo Principal (Hero) */
+.about-heroo {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.about-hero h1 {
+  font-size: 2.5rem;
+  color: #2d5a27; /* Verde acorde al header */
+  margin-bottom: 15px;
+}
+
+.About-subtitulo {
+  font-size: 1.15rem;
+  line-height: 1.6;
+  color: #555555;
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+/* 3. Diseño de Tarjetas (Misión, Qué Hacemos, Contacto) */
+.about-carta{
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 30px;
+  margin-bottom: 25px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06); /* Sombra suave para dar relieve */
+  border-left: 5px solid #4caf50; /* Línea verde decorativa al lado izquierdo */
+}
+
+.about-carta h2 {
+  color: #2d5a27;
+  font-size: 1.5rem;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.about-carta p {
+  line-height: 1.6;
+  font-size: 1rem;
+  color: #444444;
+}
+
+/* 4. Estilos para la lista de 'What We Do' */
+.about-list {
+  padding-left: 20px;
+  line-height: 1.8;
+}
+
+.about-list li {
+  margin-bottom: 8px;
+  color: #444444;
+}
+
+/* 5. Destacar la tarjeta de contacto */
+.about-cartacontacto {
+  background-color: #eef7ed; /* Un fondo verde menta suave */
+  border-left: 5px solid #2d5a27;
+  text-align: center;
+}
+/* ==========================================
+   ESTILOS DEL FOOTER
+   ========================================= AI HELPED SJHFSHFJHSK= */
+
+
+
+
+/*me encantan los comentarios de chat gipiti----Son de gemini shfshfjhjfhsjf*/  
+
+
+
+
+
+/*---------------------------------------Final de About Us---------------------------------------*/
+
+/*--------------------------------------Inicio de map.html-------------------------------------------*/
+
+
+
+/*---------------------------------------Final de map.html-------------------------------------------*/

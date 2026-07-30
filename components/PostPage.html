@@ -24,122 +24,68 @@
     </header>
 
 
-<!-- Barra izquierda -->
-<aside class="leftbar">
-
-    <div class="perfil">
-        <img src="IMG/user.png" alt="Usuario">
-        <h3>Welcome!</h3>
     </div>
 
-    <div class="menuLateral">
-        <a href="#">🌱 Eco Challenges</a>
-        <a href="#">♻ Recycling Tips</a>
-        <a href="#">🧹 Clean-up Events</a>
-        <a href="#">📷 My Posts</a>
-        <a href="#">❤️ Saved</a>
+        <div class="post-contenedor">
+
+            <!--lugar donde se cean los post-->
+            <main class="feed">
+
+                <div class="post-box">
+
+                    <input id="postInput" type="text" placeholder="¿Qué estás pensando?">
+
+                    <label class="custom-file-upload">
+                        <input id="imageInput" type="file" accept="image/*">
+                        Upload Image
+                    </label>
+                    <br>
+                    <button id="postBtn">Publicar</button>
+
+                </div>
+
+                <!-- Contenedor de posts -->
+                <div id="postsContainer"></div>
+
+            </main>
+        </div>
     </div>
-</aside>
 
-</div>
-
-    <div class="container">
-        <!--lugar donde se cean los post-->
-        <main class="feed">
-            <div class="post-box">
-                <input id="postInput" type="text" placeholder="¿Qué estás pensando?">
-                <button id="postBtn">Publicar</button>
-                <br>
-                <input id="imageInput" type="file" accept="image/*">
+    <!--FOOTER------------------------------------------------------------------------->   
+    <footer class="main-footer">
+        <div class="footer-container">
+    
+        <!-- Columna 1: Branding / Mensaje de EcoTrack AI HELPED ------->
+            <div class="footer-section brand-info">
+                <h3>EcoTrack</h3>
+                <p>Empowering communities to live sustainably, one step at a time.</p>
             </div>
 
-            <!-- Contenedor de posts -->
-            <div id="postsContainer"></div>
+        <!-- Columna 2: Enlaces Rápidos -->
+            <div class="footer-section footer-links">
+                <h4>Our Social Media</h4>
+                <ul>
+                    <li>Instagram: EcoTrack</li>
+                    <li><a href="#news">News</a></li>
+                    <li><a href="#map">Map</a></li>
+                    <li><a href="AboutUs.html">About Us</a></li>
+                </ul>
+            </div>
 
-        </main>
-          <!-- Stories -->
-
-<div class="stories">
-
-    <div class="story">
-        <img src="IMG/story1.jpg">
-        <p>Anna</p>
-    </div>
-
-    <div class="story">
-        <img src="IMG/story2.jpg">
-        <p>Lucas</p>
-    </div>
-
-    <div class="story">
-        <img src="IMG/story2.jpg">
-        <p>Sofia</p>
-    </div>
-
-    <div class="story">
-        <img src="IMG/story4.jpg">
-        <p>Emma</p>
-    </div>
-
-
-    </div>
-<div class="post">
-
-    <div class="post-header">
-
-        <img src="IMG/user.png">
-
-        <div>
-            <h3>Communities</h3>
-
-<div class="community">
-
-    🌳 Green Planet
-
-</div>
-
-<div class="community">
-
-    ♻ Recycling Club
-
-</div>
-
-<div class="community">
-
-    🌎 Save Oceans
-
-</div>
-
-<div class="community">
-
-    🌱 Eco Volunteers
-
-</div>
+        <!-- Columna 3: Frase ecológica o Redes -->
+            <div class="footer-section footer-contact">
+                <h4>Join the Movement</h4>
+                <p>Let's help the planet together, one Track at a time.</p>
+            </div>
 
         </div>
 
-    </div>
+        <!-- Barra inferior de Copyright -->
+        <div class="footer-bottom">
+            <p>&copy; 2026 EcoTrack. All rights reserved.</p>
+        </div>
+    </footer>
 
-    <p>
-        🌳 Today we planted more than 100 trees.
-        Thank you to everyone who participated!
-    </p>
-
-    <img src="IMG/tree.jpg" class="post-image">
-
-    <div class="acciones">
-
-        <button>👍 Like</button>
-
-        <button>💬 Comment</button>
-
-        <button>📤 Share</button>
-
-    </div>
-
-</div>
-
-
-<script src="JavaScript/Script.js"></script>    
+<script src="../assets/Js/Script.js"></script>    
 </body>
 </html>
