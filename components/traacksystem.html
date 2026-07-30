@@ -20,8 +20,106 @@
                 <li><a href="AboutUs.html" class="menu">About Us</a></li>
 
             </ul>
+            
 
     </header>
+    <main class="tracker-container">
+    <h1 class="tracker-title">Eco Action Tracker</h1>
+
+    <!-- Tarjeta de Estado del Usuario -->
+    <div class="tracker-card status-card">
+      <div class="user-badge" id="level-badge">🌱</div>
+      <div class="user-info">
+        <h2 id="level-title">Semilla Verde</h2>
+        <p class="points-text">Total Points: <span id="total-points">0</span> pts</p>
+      </div>
+    </div>
+
+    <!-- Formulario para Registrar Acciones -->
+    <div class="tracker-card">
+      <h3>Register a Green Action</h3>
+      <div class="action-form">
+        <select id="action-select">
+          <option value="10">Reusable bottle / thermos (+10 pts)</option>
+          <option value="20">Public transport or bike (+20 pts)</option>
+          <option value="25">Recycled / Separated waste (+25 pts)</option>
+          <option value="50">Planted a tree or cared for plants (+50 pts)</option>
+        </select>
+        <button id="add-action-btn" type="button">Log Action</button>
+      </div>
+    </div>
+
+    <!-- Sección de Emblemas / Logros -->
+    <div class="tracker-card">
+      <h3>Badges & Achievements</h3>
+      <div class="badges-grid">
+        <div class="badge-item locked" id="badge-1">
+          <span class="badge-icon">🌱</span>
+          <p>Beginner</p>
+          <small>Reach 10 pts</small>
+        </div>
+        <div class="badge-item locked" id="badge-2">
+          <span class="badge-icon">🌿</span>
+          <p>Eco Friend</p>
+          <small>Reach 50 pts</small>
+        </div>
+        <div class="badge-item locked" id="badge-3">
+          <span class="badge-icon">🌳</span>
+          <p>Urban Forest</p>
+          <small>Reach 150 pts</small>
+        </div>
+        <div class="badge-item locked" id="badge-4">
+          <span class="badge-icon">🌍</span>
+          <p>Earth Guardian</p>
+          <small>Reach 300 pts</small>
+        </div>
+      </div>
+    </div>
+
+    <!-- Historial de Acciones -->
+    <div class="tracker-card">
+      <h3>Recent Activity</h3>
+      <ul id="history-list" class="history-list">
+        <li class="empty-msg">No actions registered yet.</li>
+      </ul>
+    </div>
+  </main>
+  <!--FOOTER------------------------------------------------------------------------->   
+    <footer class="main-footer">
+        <div class="footer-container">
+    
+        <!-- Columna 1: Branding / Mensaje de EcoTrack AI HELPED ------->
+            <div class="footer-section brand-info">
+                <h3>EcoTrack</h3>
+                <p>Empowering communities to live sustainably, one step at a time.</p>
+            </div>
+
+        <!-- Columna 2: Enlaces Rápidos -->
+            <div class="footer-section footer-links">
+                <h4>Our Social Media</h4>
+                <ul>
+                    <li><a href="https://www.instagram.com/ecotrack_ma?igsh=MXRhZ2M2NGR2emR3cQ==">Instagram</a></li>
+                    <li><a href="www.tiktok.com/@ecotrak2">TikTok</a></li>
+    
+                </ul>
+            </div>
+
+        <!-- Columna 3: Frase ecológica o Redes -->
+            <div class="footer-section footer-contact">
+                <h4>Join the Movement</h4>
+                <p>Let's help the planet together, one Track at a time.</p>
+            </div>
+
+        </div>
+
+        <!-- Barra inferior de Copyright -->
+        <div class="footer-bottom">
+            <p>&copy; 2026 EcoTrack. All rights reserved.</p>
+        </div>
+    </footer>
+
+  <!-- Script con la lógica del sistema -->
+  <script src="../assets/Js/tracker.js"></script>
     
 </body>
 </html>

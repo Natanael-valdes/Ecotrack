@@ -8,7 +8,7 @@
 
 /*Encabezado y menu*/
 .encabezado{
-    background-color: #2d935e;
+    background-color: #2d5a27;
     padding: 15px;
     display: flex;
     justify-content: space-between;
@@ -637,3 +637,200 @@ input:focus{
 
 
 /*---------------------------------------Final de map.html-------------------------------------------*/
+
+
+/*---------------------------------------Inicio del Sistema de Tracking--------------------------------*/
+/* ==========================================
+   ESTILOS DEL SISTEMA DE TRACKING
+   ========================================== */
+
+.tracker-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 0 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.tracker-title {
+  text-align: center;
+  color: #2d5a27;
+  margin-bottom: 30px;
+}
+
+.tracker-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 25px;
+  margin-bottom: 25px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.tracker-card h3 {
+  margin-top: 0;
+  color: #2d5a27;
+  border-bottom: 2px solid #eef7ed;
+  padding-bottom: 10px;
+}
+
+/* Tarjeta de Nivel y Puntos */
+.status-card {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background: linear-gradient(135deg, #eef7ed 0%, #d8ebd6 100%);
+}
+
+.user-badge {
+  font-size: 3.5rem;
+  background: #ffffff;
+  padding: 15px;
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.user-info h2 {
+  margin: 0;
+  color: #2d5a27;
+  font-size: 1.6rem;
+}
+
+.points-text {
+  margin: 5px 0 0 0;
+  font-size: 1.1rem;
+  color: #444;
+}
+
+.points-text span {
+  font-weight: bold;
+  color: #2d5a27;
+  font-size: 1.3rem;
+}
+
+/* Formulario */
+.action-form {
+  display: flex;
+  gap: 15px;
+  margin-top: 15px;
+  flex-wrap: wrap;
+}
+
+.action-form select {
+  flex: 1;
+  min-width: 200px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.action-form button {
+  background-color: #2d5a27;
+  color: #fff;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.action-form button:hover {
+  background-color: #1e3d1a;
+}
+
+/* Grilla de Emblemas */
+.badges-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.badge-item {
+  text-align: center;
+  padding: 15px;
+  border-radius: 10px;
+  background: #f9f9f9;
+  border: 1px solid #eee;
+  transition: all 0.3s ease;
+}
+
+.badge-item .badge-icon {
+  font-size: 2.2rem;
+  display: block;
+}
+
+.badge-item p {
+  margin: 8px 0 2px 0;
+  font-weight: bold;
+  font-size: 0.95rem;
+}
+
+.badge-item small {
+  color: #777;
+}
+
+/* Estilo para Emblemas Bloqueados */
+.badge-item.locked {
+  opacity: 0.4;
+  filter: grayscale(100%);
+}
+
+.badge-item.unlocked {
+  opacity: 1;
+  filter: grayscale(0%);
+  background: #eef7ed;
+  border-color: #a8e6cf;
+}
+
+/* Historial */
+.history-list {
+  list-style: none;
+  padding: 0;
+  margin: 15px 0 0 0;
+}
+
+.history-list li {
+  padding: 10px 15px;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.95rem;
+}
+
+.history-list li:last-child {
+  border-bottom: none;
+}
+
+.history-pts {
+  font-weight: bold;
+  color: #2d5a27;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-------------------------------------------final del sistema de tracking--------------------------*/
