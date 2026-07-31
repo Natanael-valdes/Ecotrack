@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi Perfil - EcoTrack</title>
+    <link rel="stylesheet" href="../assets/css/styles.css" />
+</head>
+<body class="cuerpo">
+
+    <!-- ========== HEADER (igual que en las demás páginas) ========== -->
+    <header class="encabezado">
+        <h2>EcoTrack</h2>
+        <ul>
+            <li><a href="Home.html" class="menu">Home</a></li>
+            <li><a href="PostPage.html" class="menu">News</a></li>
+            <li><a href="HandcraftPage.html" class="menu">EcoCraft</a></li>
+            <li><a href="map.html" class="menu">Map</a></li>
+            <li><a href="AboutUs.html" class="menu">About Us</a></li>
+            <li><a href="User.html" class="menu active">profile</a></li>
+        </ul>
+    </header>
+
+    <!-- ========== CONTENIDO PRINCIPAL ========== -->
+    <main class="profile-container">
+        <div class="profile-card">
+            <!-- Foto de perfil -->
+            <div class="profile-avatar">
+                <img src="../assets/img/default-avatar.png" alt="Avatar" id="avatarImg" />
+                <button class="btn-change-avatar" id="changeAvatarBtn">Change profile photo</button>
+                <input type="file" id="avatarInput" accept="image/*" style="display:none;" />
+            </div>
+
+            <!-- Datos del usuario -->
+            <div class="profile-info">
+                <h1 id="displayName">User</h1>
+                <p class="username">@User</p>
+                <p class="bio" id="bioDisplay">add a bio</p>
+                <p class="joined">Se unió en junio de 2026</p>
+
+                <!-- Estadísticas -->
+                <div class="profile-stats">
+                    <div><span id="postCount">12</span> Publicaciones</div>
+                    <div><span>34</span> Followers</div>
+                    <div><span>28</span> Following</div>
+                </div>
+
+                <!-- Botón de editar perfil -->
+                <button class="btn-edit-profile" id="editProfileBtn">Edit perfil</button>
+            </div>
+        </div>
+
+        <!-- Sección de edición (oculta por defecto) -->
+        <div class="edit-profile-section" id="editProfileSection" style="display:none;">
+            <h3>Edit profile</h3>
+            <form id="editProfileForm">
+                <label for="editName">Name</label>
+                <input type="text" id="editName" value="María González" />
+
+                <label for="editBio">Biografía</label>
+                <textarea id="editBio" rows="3">...</textarea>
+
+                <button type="submit" class="btn-save-profile">Save changes</button>
+                <button type="button" class="btn-cancel-edit" id="cancelEditBtn">Cancel</button>
+            </form>
+        </div>
+    </main>
+
+    <!-- ========== SCRIPTS ========== -->
+    <script src="../assets/js/profile.js"></script>
+</body>
+</html>
