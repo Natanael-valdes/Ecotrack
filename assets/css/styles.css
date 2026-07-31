@@ -634,7 +634,46 @@ input:focus{
 
 /*--------------------------------------Inicio de map.html-------------------------------------------*/
 
+.contenedor-map{
+  width: 95%;
+  margin: 25px auto;
+  display: grid;
+  grid-template-columns: 270px 1fr 270px;
+  gap: 20px;
+}
 
+.izquierda-map,
+.derecha-map{
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,.15);
+}
+
+.izquierda-map,
+.derecha-map{
+  color: #2E7D32;
+  margin-bottom: 15px;
+}
+
+.card{
+  background: #f4fff4;
+  border-left: 6px solid #43A047;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  transition: .3s;
+}
+
+.card:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,.15);
+}
+
+.tituloMapa{
+  text-align:center;
+  margin-bottom:20px;
+}
 
 /*---------------------------------------Final de map.html-------------------------------------------*/
 
