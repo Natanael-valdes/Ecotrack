@@ -23,7 +23,61 @@
 
     </header>
 
-<h1>COSAS PARA CREAR COSAS</h1>
+    <main class="handcraft-container">
+    
+    <!-- Hero Header -->
+    <section class="handcraft-hero">
+      <h1>Eco Handcrafts & DIY</h1>
+      <p>Transform your waste into creative and useful projects for your home!</p>
+    </section>
+
+    <!-- Filtros de Categoría -->
+    <section class="filters-section">
+      <button class="filter-btn active" data-category="all">🌱 All Projects</button>
+      <button class="filter-btn" data-category="plastic">🍾 Plastic</button>
+      <button class="filter-btn" data-category="cardboard">📦 Paper & Cardboard</button>
+      <button class="filter-btn" data-category="glass">🥫 Glass & Tin</button>
+    </section>
+
+    <!-- Grilla de Proyectos -->
+    <section class="projects-grid" id="projects-grid">
+      <!-- Se llena dinámicamente con JS -->
+    </section>
+
+    <!-- Sección de Eco-Tips -->
+    <section class="tips-section">
+      <h2>💡 Quick Eco-Tips for Crafting</h2>
+      <div class="tips-grid">
+        <div class="tip-card">
+          <span class="tip-icon">🧼</span>
+          <h3>Clean Waste First</h3>
+          <p>Always wash bottles, cans, and containers thoroughly before reuse to avoid bad odors or mold.</p>
+        </div>
+        <div class="tip-card">
+          <span class="tip-icon">✂️</span>
+          <h3>Safety First</h3>
+          <p>Use child-safe scissors for paper and get adult assistance when cutting thick plastic or metal edges.</p>
+        </div>
+        <div class="tip-card">
+          <span class="tip-icon">🎨</span>
+          <h3>Eco-Friendly Paints</h3>
+          <p>Use water-based acrylic paints instead of solvent-based sprays to reduce harmful fumes.</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Modal para ver el Paso a Paso -->
+  <div class="modal-overlay" id="modal-overlay">
+    <div class="modal-content">
+      <button class="modal-close" id="modal-close">&times;</button>
+      <div id="modal-body">
+        <!-- Contenido inyectado por JS -->
+      </div>
+    </div>
+  </div>
+
 
 <!--FOOTER------------------------------------------------------------------------->   
     <footer class="main-footer">
@@ -63,6 +117,7 @@
 
 
 
-<script src="JavaScript/Script.js"></script>    
+<!-- Script del apartado -->
+  <script src="../assets/Js/handcraft.js"></script>  
 </body>
 </html>
