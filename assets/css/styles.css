@@ -1284,3 +1284,49 @@ input:focus{
 .user-posts-section h3 {
     margin-bottom: 1rem;
 }
+/* CARRUSEL */
+
+.carousel{
+    width:70%;
+    margin:30px auto;
+    position:relative;
+    overflow:hidden;
+    border-radius:15px;
+}
+
+.slides{
+    display:flex;
+    transition:transform .5s ease;
+}
+
+.slide{
+    min-width:100%;
+}
+
+.slide img{
+    width:100%;
+    height:430px;
+    object-fit:cover;
+}
+
+.btn{
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+    border:none;
+    background:rgba(0,0,0,.5);
+    color:white;
+    font-size:25px;
+    width:45px;
+    height:45px;
+    cursor:pointer;
+    border-radius:50%;
+}
+
+.prev{
+    left:15px;
+}
+
+.next{
+    right:15px;
+}
