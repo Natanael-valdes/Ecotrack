@@ -408,6 +408,189 @@ input:focus{
 
 /*-------------------------------Home-----------------------------------------------------------------*/
 
+.bienvenida{
+
+    text-align:center;
+    margin-top:50px;
+}
+
+.bienvenida h1{
+    font-size:45px;
+    color:#2e8b57;
+}
+
+.bienvenida p{
+    font-size:22px;
+    color:#555;
+    margin-top:15px;
+}
+
+/* Contenedor */
+.contenedor-tarjetas{
+    display:flex;
+    justify-content:center;
+    gap:40px;
+    margin-top:60px;
+    flex-wrap:wrap;
+}
+
+/* Tarjetas */
+.tarjeta{
+    width:300px;
+    background:white;
+    border-radius:15px;
+    text-decoration:none;
+    color:black;
+    box-shadow:0 5px 15px rgba(0,0,0,.2);
+    transition:.3s;
+    overflow:hidden;
+}
+
+.tarjeta:hover{
+    transform:scale(1.05);
+}
+
+.tarjeta img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+}
+
+.tarjeta h2{
+    color:#2e8b57;
+    text-align:center;
+    margin:15px;
+}
+
+.tarjeta p{
+    text-align:center;
+    padding:0 20px 20px;
+}
+/* CARRUSEL */
+
+.carousel{
+    width:70%;
+    margin:30px auto;
+    position:relative;
+    overflow:hidden;
+    border-radius:15px;
+}
+
+.slides{
+    display:flex;
+    transition:transform .5s ease;
+}
+
+.slide{
+    min-width:100%;
+}
+
+.slide img{
+    width:100%;
+    height:430px;
+    object-fit:cover;
+}
+
+.btn{
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+    border:none;
+    background:rgba(0,0,0,.5);
+    color:white;
+    font-size:25px;
+    width:45px;
+    height:45px;
+    cursor:pointer;
+    border-radius:50%;
+}
+
+.prev{
+    left:15px;
+}
+
+.next{
+    right:15px;
+}
+
+.voluntariado{
+    width:90%;
+    margin:70px auto;
+    text-align:center;
+}
+
+.voluntariado h1{
+    color:#2e7d32;
+    font-size:40px;
+    margin-bottom:15px;
+}
+
+.intro{
+    font-size:18px;
+    color:#555;
+    margin-bottom:40px;
+}
+
+.contenedorVoluntariado{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+}
+
+.actividad{
+    width:300px;
+    background:white;
+    border-radius:15px;
+    padding:25px;
+    box-shadow:0 8px 20px rgba(0,0,0,.15);
+    transition:.3s;
+}
+
+.actividad:hover{
+    transform:translateY(-8px);
+}
+
+.actividad h2{
+    color:#2e7d32;
+    margin-bottom:15px;
+}
+
+.actividad p{
+    margin-bottom:20px;
+}
+
+.actividad button{
+    background:#2e7d32;
+    color:white;
+    border:none;
+    padding:12px 25px;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:16px;
+}
+
+.actividad button:hover{
+    background:#1b5e20;
+}
+
+.informacion{
+    margin-top:50px;
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 8px 20px rgba(0,0,0,.15);
+}
+
+.informacion h2{
+    color:#2e7d32;
+    margin-bottom:20px;
+}
+
+.informacion p{
+    margin:10px 0;
+}
+
 /*---------------------------------FinalHome-----------------------------------------------------------*/
 
 /*-----------------------------------Inicio de Pospage.html--------------------------------------------*/
@@ -1283,50 +1466,4 @@ input:focus{
 
 .user-posts-section h3 {
     margin-bottom: 1rem;
-}
-/* CARRUSEL */
-
-.carousel{
-    width:70%;
-    margin:30px auto;
-    position:relative;
-    overflow:hidden;
-    border-radius:15px;
-}
-
-.slides{
-    display:flex;
-    transition:transform .5s ease;
-}
-
-.slide{
-    min-width:100%;
-}
-
-.slide img{
-    width:100%;
-    height:430px;
-    object-fit:cover;
-}
-
-.btn{
-    position:absolute;
-    top:50%;
-    transform:translateY(-50%);
-    border:none;
-    background:rgba(0,0,0,.5);
-    color:white;
-    font-size:25px;
-    width:45px;
-    height:45px;
-    cursor:pointer;
-    border-radius:50%;
-}
-
-.prev{
-    left:15px;
-}
-
-.next{
-    right:15px;
 }
