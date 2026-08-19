@@ -234,7 +234,7 @@ input:focus{
 
 /*Crea u a cuenta nueva boton*/
 .crear{
-    width: 470px;
+    width: 100%;
     height:35px;
     background-color: white;
     color:black;

@@ -25,7 +25,7 @@ function updateUI() {
     levelTitleEl.textContent = 'Eco Friend';
     levelBadgeEl.textContent = '🌿';
   } else {
-    levelTitleEl.textContent = 'Semilla Verde';
+    levelTitleEl.textContent = 'Beginner';
     levelBadgeEl.textContent = '🌱';
   }
 
