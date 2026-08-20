@@ -103,7 +103,6 @@ span{
 }
 
 .footer-bottom {
-  background-color: #1e3d1a; /* Verde aún más oscuro para el contraste final */
   text-align: center;
   padding: 15px 20px;
   font-size: 0.85rem;
@@ -466,52 +465,246 @@ input:focus{
     text-align:center;
     padding:0 20px 20px;
 }
-/* CARRUSEL */
 
-.carousel{
-    width:70%;
-    margin:30px auto;
-    position:relative;
-    overflow:hidden;
-    border-radius:15px;
+
+/* CARRUSEL ------------*/
+
+
+.carousel {
+    width: 100%;
+    height: 78vh;
+    min-height: 520px;
+    position: relative;
+    overflow: hidden;
+    margin: 0;
+    background: #173d20;
 }
 
-.slides{
-    display:flex;
-    transition:transform .5s ease;
+
+/* CONTENEDOR */
+
+.slides {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.75s cubic-bezier(0.65, 0, 0.35, 1);
 }
 
-.slide{
-    min-width:100%;
+
+/* SLIDE */
+
+.slide {
+    min-width: 100%;
+    width: 100%;
+    height: 100%;
+    flex-shrink: 0;
+    position: relative;
+    overflow: hidden;
 }
 
-.slide img{
-    width:100%;
-    height:430px;
-    object-fit:cover;
+
+/* IMAGEN */
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    transform: scale(1.02);
+    transition:transform 1.2s ease;
 }
 
-.btn{
-    position:absolute;
-    top:50%;
-    transform:translateY(-50%);
-    border:none;
-    background:rgba(0,0,0,.5);
-    color:white;
-    font-size:25px;
-    width:45px;
-    height:45px;
-    cursor:pointer;
-    border-radius:50%;
+
+/* ZOOM */
+
+.slide.active img {
+    transform: scale(1.08);
 }
 
-.prev{
-    left:15px;
+
+/* =========================================================
+   DEGRADADO
+========================================================= */
+
+.slide::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+        linear-gradient(
+            90deg,
+            rgba(0, 0, 0, 0.68) 0%,
+            rgba(0, 0, 0, 0.42) 35%,
+            rgba(0, 0, 0, 0.12) 75%,
+            rgba(0, 0, 0, 0.05) 100%
+        );
+    pointer-events: none;
+    z-index: 1;
 }
 
-.next{
-    right:15px;
+
+/* Contenido sobre la imagen del carrucel--------*/
+
+.carousel-content{
+    position: absolute;
+    z-index: 5;
+    left: 8%;
+    top: 50%;
+    transform: translateY(-50%);
+    max-width: 620px;
+    color: white;
+  }
+
+/* PEQUEÑA ETIQUETA */
+.carousel-label {
+    display: inline-block;
+    color: #b8e6c1;
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin-bottom: 18px;
 }
+
+
+/* TÍTULO */
+
+.carousel-content h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: clamp(2.8rem, 5vw, 5rem);
+    line-height: 1.02;
+    margin-bottom: 22px;
+    font-weight: 700;
+    color: #ffffff;
+    text-shadow:0 3px 15px rgba(0, 0, 0, 0.4);
+}
+
+
+/* DESCRIPCIÓN */
+
+.carousel-content p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: clamp(1rem, 1.5vw, 1.2rem);
+    line-height: 1.65;
+    max-width: 520px;
+    color: rgba(255, 255, 255, 0.94);
+    margin-bottom: 28px;
+}
+
+
+/*Boton carrucel*/
+
+.hero-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 14px 28px;
+    background: #4caf50;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    box-shadow:0 5px 18px rgba(0, 0, 0, 0.2);
+    transition:
+        background 0.3s ease,
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.hero-button:hover {
+    background: #388e3c;
+    transform: translateY(-3px);
+    box-shadow:0 8px 22px rgba(0, 0, 0, 0.28);
+}
+
+
+/* Botones del carrucel */
+
+.btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    width: 54px;
+    height: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    background: rgba(255, 255, 255, 0.14);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    color: white;
+    font-size: 27px;
+    font-weight: 300;
+    cursor: pointer;
+    border-radius: 50%;
+    transition:
+        background 0.3s ease,
+        transform 0.3s ease,
+        border-color 0.3s ease;
+}
+
+.btn:hover {
+    background: rgba(255, 255, 255, 0.30);
+    border-color: rgba(255, 255, 255, 0.75);
+    transform:
+        translateY(-50%) scale(1.08);
+}
+
+.btn:active {
+    transform:
+        translateY(-50%) scale(0.94);
+}
+
+.prev {
+    left: 25px;
+}
+
+.next {
+    right: 25px;
+}
+
+
+/*INdicadores*/
+
+.carousel-indicators {
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    z-index: 20;
+}
+
+.carousel-indicators span {
+    display: block;
+    width: 9px;
+    height: 9px;
+    background: rgba(255, 255, 255, 0.45);
+    border-radius: 50%;
+    cursor: pointer;
+    transition:
+        width 0.3s ease,
+        background 0.3s ease,
+        transform 0.3s ease;
+}
+
+.carousel-indicators span:hover {
+    background: rgba(255, 255, 255, 0.8);
+}
+
+.carousel-indicators span.active {
+    width: 30px;
+    border-radius: 10px;
+    background: white;
+}
+
+/*fin del carrusel-------------*/
+
 
 .voluntariado{
     width:90%;
@@ -800,16 +993,38 @@ input:focus{
   border-left: 5px solid #2d5a27;
   text-align: center;
 }
-/* ==========================================
-   ESTILOS DEL FOOTER
-   ========================================= AI HELPED SJHFSHFJHSK= */
 
+/*Tarjeta de presentacion*/
+.EQUIPO{
+  margin-bottom: 2%;
+}
 
+.meetteam{
+  display: flex;
+  margin-bottom: 2%;
+}
 
+.nombreDescripcion{
+  display: flex;
+  flex-direction: column;
+}
 
-/*me encantan los comentarios de chat gipiti----Son de gemini shfshfjhjfhsjf*/  
+.nombreDescripcion h2{
+  margin-bottom: 0px;
+}
 
+.nombreDescripcion p{
+  margin: 0px;
+}
 
+.fotoabout{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #689071;
+  margin-right: 1%;
+}
 
 
 
