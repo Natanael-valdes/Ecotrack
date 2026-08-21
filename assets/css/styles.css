@@ -1682,3 +1682,16 @@ input:focus{
 .user-posts-section h3 {
     margin-bottom: 1rem;
 }
+
+
+/*------------------------------------Inicio voluntier--------------------------------*/
+
+#formulario_god{
+  display: flex;
+  gap: 2%;
+  align-items: center;
+}
+
+#formulario_god label{
+  justify-content: center;
+}
