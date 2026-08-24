@@ -1695,3 +1695,188 @@ input:focus{
 #formulario_god label{
   justify-content: center;
 }
+
+/*---------------------------------------Inicio de About Us---------------------------------------*/
+ 
+/* Contenedor principal */
+
+.contenedor1about{
+
+    max-width: 900px;
+
+    margin: 40px auto;
+
+    padding: 0 20px;
+
+}
+ 
+/* Sección del título principal */
+
+.about-heroo{
+
+    text-align: center;
+
+    margin-bottom: 40px;
+
+}
+ 
+/* Título */
+
+.about-heroo h1,
+
+.about-hero h1{
+
+    font-size: 2.5rem;
+
+    color: #2d5a27;
+
+    margin-bottom: 15px;
+
+}
+ 
+/* Subtítulo */
+
+.About-subtitulo{
+
+    font-size: 1.15rem;
+
+    line-height: 1.6;
+
+    color: #555555;
+
+    max-width: 750px;
+
+    margin: 0 auto;
+
+}
+ 
+/* Tarjetas */
+
+.about-carta{
+
+    background-color: #ffffff;
+
+    border-radius: 12px;
+
+    padding: 30px;
+
+    margin-bottom: 25px;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+
+    border-left: 5px solid #4caf50;
+
+}
+ 
+.about-carta h2{
+
+    color: #2d5a27;
+
+    font-size: 1.5rem;
+
+    margin-top: 0;
+
+    margin-bottom: 15px;
+
+}
+ 
+.about-carta p{
+
+    line-height: 1.6;
+
+    font-size: 1rem;
+
+    color: #444444;
+
+}
+ 
+/* Lista */
+
+.about-list{
+
+    padding-left: 20px;
+
+    line-height: 1.8;
+
+}
+ 
+.about-list li{
+
+    margin-bottom: 8px;
+
+    color: #444444;
+
+}
+ 
+/* Tarjeta de contacto */
+
+.about-cartacontacto{
+
+    background-color: #eef7ed;
+
+    border-left: 5px solid #2d5a27;
+
+    text-align: center;
+
+}
+ 
+/*=================================================
+
+  PRESENTACIÓN DEL EQUIPO
+
+=================================================*/
+ 
+.EQUIPO{
+
+    margin-bottom: 2%;
+
+}
+ 
+.meetteam{
+
+    display: flex;
+
+    margin-bottom: 2%;
+
+    align-items: center;
+
+}
+ 
+.nombreDescripcion{
+
+    display: flex;
+
+    flex-direction: column;
+
+}
+ 
+.nombreDescripcion h2{
+
+    margin-bottom: 0;
+
+}
+ 
+.nombreDescripcion p{
+
+    margin: 0;
+
+}
+ 
+.fotoabout{
+
+    width: 100px;
+
+    height: 100px;
+
+    border-radius: 50%;
+
+    object-fit: cover;
+
+    border: 4px solid #689071;
+
+    margin-right: 1%;
+
+}
+ 
+/*---------------------------------------Final de About Us---------------------------------------*/
+ 

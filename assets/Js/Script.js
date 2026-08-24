@@ -1,4 +1,30 @@
- 
+ //------------------------------formulario voluntier---------------------------------------------
+
+const checks = document.querySelectorAll('.check-allergy');
+const formularioExtra = document.getElementById('formulario-extra');
+
+checks.forEach(checkbox => {
+    checkbox.addEventListener('change', function () {
+        // Desmarcar los demás checkboxes (comportamiento tipo radio)
+        checks.forEach(other => {
+            if (other !== this) other.checked = false;
+        });
+
+        // Mostrar/ocultar el formulario extra según lo seleccionado
+        if (this.checked && this.dataset.value === 'yes') {
+            formularioExtra.style.display = 'block';
+        } else {
+            formularioExtra.style.display = 'none';
+        }
+    });
+});
+
+
+function btonsubir(){
+  alert("form to voluntier sent")
+}
+
+
 
  //-------------------------------cambios de pagina (navigate)---------------------------------------------
 function BotonMover(){
@@ -6,12 +32,13 @@ function BotonMover(){
 }
 
 function BtonPassword(){
-    window.location.href = "ReestorePassword.html"
+    window.location.href = "components/ReestorePassword.html"
 }
 
 function btonChange(){
-    window.location.href = "Home.html"
+    window.location.href = "components/Home.html"
 }
+
 
 function mostrarfom(){
     let form = document.getElementById("formulario-Mago");

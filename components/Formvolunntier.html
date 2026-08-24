@@ -12,7 +12,7 @@
     <div class="contenedor-base">
         <h3>Join a Volunteer</h3>
         <div>
-            <form action="PrincipalPage.html" class="formulario-log">
+            <form action="../components/Home.html" class="formulario-log">
                 
                 <input type="text" placeholder="Name" class="cajita-texto">
                 
@@ -22,21 +22,25 @@
                 
                 <input type="email" placeholder="Example@gmail.com" class="cajita-texto">
                 
-                <div id="formulario_god">
+                <div id="formulario_god" id="Chequeo">
                     <p>Allergies?</p> 
 
-                    <label><input type="checkbox" placeholder="Allergies?"  value="Yes">Yes</label>
-                
-                    <label><input type="checkbox" placeholder="Allergies?" value="No">No</label>
+                    <label><input type="checkbox" class="check-allergy" data-value="yes"> Yes</label>
+                    <label><input type="checkbox" class="check-allergy" data-value="no"> No</label>
+
+                    <!-- Formulario que aparece solo si selecciona "Yes" -->
+                    <div id="formulario-extra" style="display:none;">
+                        <input type="text" placeholder="¿Qué alergias tienes?" class="cajita-texto">
+                    </div>
                 
                 </div>
-                <input type="submit" value="Create" class="botoncito" >
+                <input type="submit" value="Send" class="botoncito" onclick="btonsubir()">
             </form>
 
-            <a href="../index.html" class="textoUnderline">Back</a>
+            <a href="Home.html" class="textoUnderline">Back</a>
         </div>
     </div>
     
-    <script src="JavaScript/Script.js"></script>
+    <script src="../assets/Js/Script.js"></script>
 </body>
 </html>

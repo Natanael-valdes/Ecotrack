@@ -6,140 +6,462 @@
     <title>About EcoTeam</title>
     <link rel="stylesheet" href="../assets/css/Styles.css">
 </head>
+
 <body class="cuerpo">
-    
-<!--header y el menu-->
+
+    <!-- HEADER -->
     <header class="encabezado">
 
         <h2>EcoTrack</h2>
 
-            <ul>
-                <li><a href="Home.html" class="menu">Home</a></li>
-                <li><a href="PostPage.html" class="menu">News</a></li>
-                <li><a href="handcraftPage.html" class="menu">EcoCraft</a></li>
-                <li><a href="map.html" class="menu">Map</a></li>
-                <li><a href="AboutUs.html" class="menu">About Us</a></li>
-                <li><a href="User.html" class="menu active">Profile</a></li>
-            </ul>
+        <ul>
+            <li><a href="Home.html" class="menu">Home</a></li>
+            <li><a href="PostPage.html" class="menu">News</a></li>
+            <li><a href="handcraftPage.html" class="menu">EcoCraft</a></li>
+            <li><a href="map.html" class="menu">Map</a></li>
+            <li><a href="AboutUs.html" class="menu">About Us</a></li>
+            <li><a href="User.html" class="menu active">Profile</a></li>
+        </ul>
 
     </header>
 
-    <!-- Apartado About Us ------------------------------------------------------------------------------------------>
+
+    <!-- =====================================================
+         CARRUSEL PRINCIPAL
+    ====================================================== -->
+
+    <section class="team-carousel">
+
+        <!-- SLIDE 1 -->
+        <div class="carousel-slide active">
+
+            <img 
+                src="../assets/IMG/Team.jpg" 
+                alt="EcoTeam">
+
+            <div class="carousel-overlay">
+
+                <span>ECOTRACK</span>
+
+                <h1>
+                    Building a greener
+                    future, together.
+                </h1>
+
+                <p>
+                    A team committed to creating ideas and
+                    technology for a cleaner and more
+                    sustainable world.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- SLIDE 2 -->
+        <div class="carousel-slide">
+
+            <img 
+                src="../assets/IMG/clener team.png" 
+                alt="Cleaner Team">
+
+            <div class="carousel-overlay">
+
+                <span>OUR TEAM</span>
+
+                <h1>
+                    Different talents.
+                    One purpose.
+                </h1>
+
+                <p>
+                    We combine creativity, technology and
+                    teamwork to make a positive impact
+                    on our environment.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- SLIDE 3 -->
+        <div class="carousel-slide">
+
+            <img 
+                src="../assets/IMG/naturaleza fts.png" 
+                alt="Nature">
+
+            <div class="carousel-overlay">
+
+                <span>OUR PURPOSE</span>
+
+                <h1>
+                    Protecting nature
+                    starts with us.
+                </h1>
+
+                <p>
+                    Every action matters when we work
+                    together to build a better future
+                    for our planet.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- BOTÓN ANTERIOR -->
+        <button 
+            class="carousel-btn prev"
+            onclick="previousSlide()"
+            aria-label="Previous slide">
+
+            &#10094;
+
+        </button>
+
+
+        <!-- BOTÓN SIGUIENTE -->
+        <button 
+            class="carousel-btn next"
+            onclick="nextSlide()"
+            aria-label="Next slide">
+
+            &#10095;
+
+        </button>
+
+
+        <!-- INDICADORES -->
+        <div class="carousel-dots">
+
+            <span 
+                class="dot active"
+                onclick="goToSlide(0)">
+            </span>
+
+            <span 
+                class="dot"
+                onclick="goToSlide(1)">
+            </span>
+
+            <span 
+                class="dot"
+                onclick="goToSlide(2)">
+            </span>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         ABOUT US
+    ====================================================== -->
+
     <main class="contenedor1about">
-    <!--TituloPrincipal-->
+
         <section class="About-heroo">
+
             <h1>About EcoTeam</h1>
-            <p class="About-subtitulo">Welcome to EcoTrack! We are a dedicated group of individuals passionate about environmental sustainability, community action, and ecological awareness.</p>
+
+            <p class="About-subtitulo">
+                Welcome to EcoTrack! We are a dedicated group
+                of individuals passionate about environmental
+                sustainability, community action, and ecological
+                awareness.
+            </p>
+
         </section>
 
-        <!--equipo principal-->
+
+        <!-- =================================================
+             EQUIPO
+        ================================================== -->
+
         <section class="EQUIPO">
-            <h1 class="About-heroo"><span>Meet the team</span></h1>
 
-            <!--Nathan-->
+            <h1 class="About-heroo">
+                <span>Meet the team</span>
+            </h1>
+
+
+            <!-- NATHAN -->
             <div class="meetteam">
-                <img src="../assets/IMG/nathan.jpg" alt="Nathan" class="fotoabout">
+
+                <img 
+                    src="../assets/IMG/nathan.jpg"
+                    alt="Nathan"
+                    class="fotoabout">
+
                 <div class="nombreDescripcion">
-                    <h2>Nathan (BackEnd Developer)</h2>
+
+                    <h2>
+                        Nathan (BackEnd Developer)
+                    </h2>
+
                     <br>
-                    <p>The head of the code </p>
+
+                    <p>
+                        Backend developer responsible for
+                        building and supporting the systems
+                        behind EcoTrack.
+                    </p>
+
                 </div>
+
             </div>
 
-            <!--Gisslle-->
+
+            <!-- GISELLE -->
             <div class="meetteam">
-                <img src="../assets/IMG/Wafles.jpg" alt="wafles" class="fotoabout">
+
+                <img 
+                    src="../assets/IMG/Wafles.jpg"
+                    alt="Giselle"
+                    class="fotoabout">
+
                 <div class="nombreDescripcion">
-                    <h2>Giselle (CEO)</h2>
+
+                    <h2>
+                        Giselle (CEO)
+                    </h2>
+
                     <br>
-                    <p></p>
+
+                    <p>
+                        Leads the team and helps guide the
+                        vision and development of EcoTrack.
+                    </p>
+
                 </div>
+
             </div>
 
-            <!--Marce-->
+
+            <!-- MARCELA -->
             <div class="meetteam">
-                <img src="../assets/IMG/mache.jpg" alt="rosa" class="fotoabout">
+
+                <img 
+                    src="../assets/IMG/mache.jpg"
+                    alt="Marcela"
+                    class="fotoabout">
+
                 <div class="nombreDescripcion">
-                    <h2>Marcela (FrontEnd Developer)</h2>
+
+                    <h2>
+                        Marcela (FrontEnd Developer)
+                    </h2>
+
                     <br>
-                    <p></p>
+
+                    <p>
+                        Frontend developer focused on creating
+                        an accessible and engaging user experience.
+                    </p>
+
                 </div>
+
             </div>
 
-            <!--Emely-->
+
+            <!-- EMELY -->
             <div class="meetteam">
-                <img src="../assets/IMG/emi.jpg" alt="MIMI" class="fotoabout">
+
+                <img 
+                    src="../assets/IMG/emi.jpg"
+                    alt="Emely"
+                    class="fotoabout">
+
                 <div class="nombreDescripcion">
-                    <h2>Emely (Marketing)</h2>
+
+                    <h2>
+                        Emely (Marketing)
+                    </h2>
+
                     <br>
-                    <p></p>
+
+                    <p>
+                        Works on communication and marketing
+                        strategies to connect EcoTrack with
+                        its community.
+                    </p>
+
                 </div>
+
             </div>
 
-            <!--Xavi-->
+
+            <!-- XAVIER -->
             <div class="meetteam">
-                <img src="../assets/IMG/Xavi.jpg" alt="xapo" class="fotoabout">
+
+                <img 
+                    src="../assets/IMG/Xavi.jpg"
+                    alt="Xavier"
+                    class="fotoabout">
+
                 <div class="nombreDescripcion">
-                    <h2>Xavier (Graphic Designer)</h2>
+
+                    <h2>
+                        Xavier (Graphic Designer)
+                    </h2>
+
                     <br>
-                    <p></p>
+
+                    <p>
+                        Creates the visual identity and graphic
+                        elements that represent EcoTrack.
+                    </p>
+
                 </div>
+
             </div>
+
         </section>
 
-    <!--Tarjeta de Misión-->
+
+
+        <!-- =================================================
+             MISSION
+        ================================================== -->
+
         <section class="about-carta">
+
             <h2>Our Mission</h2>
-            <p>Our mission is to empower communities and individuals with the tools, knowledge, and resources needed to reduce their environmental footprint and live more sustainable lives.</p>
-            
+
+            <p>
+                Our mission is to empower communities and
+                individuals with the tools, knowledge, and
+                resources needed to reduce their environmental
+                footprint and live more sustainable lives.
+            </p>
+
+
             <h2>What We Do</h2>
+
             <ul class="about-list">
-                <li>Provide up-to-date environmental news and insights.</li>
-                <li>Offer creative guides and help for handicrafts made from recycled materials.</li>
-                <li>Map out eco-friendly locations, recycling centers, and green spaces.</li>
+
+                <li>
+                    Provide up-to-date environmental news
+                    and insights.
+                </li>
+
+                <li>
+                    Offer creative guides and help for
+                    handicrafts made from recycled materials.
+                </li>
+
+                <li>
+                    Map out eco-friendly locations,
+                    recycling centers, and green spaces.
+                </li>
+
             </ul>
+
         </section>
-    <!--Tarjeta sobre el bloque de contacto-->
+
+
+
+        <!-- =================================================
+             CONTACT
+        ================================================== -->
+
         <section class="about-cartacontacto">
+
             <h2>Get in Touch</h2>
-            <p>If you want to collaborate or learn more about our initiative, feel free to reach out to us!</p>
+
+            <p>
+                If you want to collaborate or learn more
+                about our initiative, feel free to reach
+                out to us!
+            </p>
+
         </section>
+
     </main>
 
 
- <!--FOOTER------------------------------------------------------------------------->   
+
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
+
     <footer class="main-footer">
+
         <div class="footer-container">
-    
-        <!-- Columna 1: Branding / Mensaje de EcoTrack AI HELPED ------->
+
+
+            <!-- BRAND -->
             <div class="footer-section brand-info">
+
                 <h3>EcoTrack</h3>
-                <p>Empowering communities to live sustainably, one step at a time.</p>
+
+                <p>
+                    Empowering communities to live sustainably,
+                    one step at a time.
+                </p>
+
             </div>
 
-        <!-- Columna 2: Enlaces Rápidos -->
+
+            <!-- SOCIAL MEDIA -->
             <div class="footer-section footer-links">
+
                 <h4>Our Social Media</h4>
+
                 <ul>
-                    <li><a href="https://www.instagram.com/ecotrack_ma?igsh=MXRhZ2M2NGR2emR3cQ==">Instagram</a></li>
-                    <li><a href="www.tiktok.com/@ecotrak2">TikTok</a></li>
-    
+
+                    <li>
+                        <a href="https://www.instagram.com/ecotrack_ma?igsh=MXRhZ2M2NGR2emR3cQ==">
+                            Instagram
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.tiktok.com/@ecotrak2">
+                            TikTok
+                        </a>
+                    </li>
+
                 </ul>
+
             </div>
 
-        <!-- Columna 3: Frase ecológica o Redes -->
+
+            <!-- CONTACT -->
             <div class="footer-section footer-contact">
+
                 <h4>Join the Movement</h4>
-                <p>Let's help the planet together, one Track at a time.</p>
+
+                <p>
+                    Let's help the planet together,
+                    one Track at a time.
+                </p>
+
             </div>
 
         </div>
 
-        <!-- Barra inferior de Copyright -->
+
+        <!-- COPYRIGHT -->
         <div class="footer-bottom">
-            <p>&copy; 2026 EcoTrack. All rights reserved.</p>
+
+            <p>
+                &copy; 2026 EcoTrack. All rights reserved.
+            </p>
+
         </div>
+
     </footer>
+
+
+
+    <!-- JAVASCRIPT DEL CARRUSEL -->
+    <script src="../assets/Js/carruselteam.js"></script>
 
 </body>
 </html>
