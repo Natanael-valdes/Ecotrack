@@ -926,6 +926,34 @@ input:focus{
 /*---------------------------------------Inicio de About Us---------------------------------------*/
 
 
+.carousel-team{
+    position: absolute;
+    z-index: 5;
+    left: 8%;
+    top: 75%;
+    transform: translateY(-50%);
+    max-width: 50%;
+    color: white;
+}
+
+.carousel-team span{
+  display: inline-block;
+    color: #b8e6c1;
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+.carousel-team h1{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 150%;
+    line-height: 1.02;
+    margin-bottom: 22px;
+    font-weight: 700;
+    color: #ffffff;
+    text-shadow:0 3px 15px rgba(0, 0, 0, 0.4);
+}
+
 /*1.Centrar y dar ancho máximo al contenido */
 .contenedor1about{
   max-width: 900px;
