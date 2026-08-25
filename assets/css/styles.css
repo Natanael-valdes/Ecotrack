@@ -1908,3 +1908,646 @@ input:focus{
  
 /*---------------------------------------Final de About Us---------------------------------------*/
  
+/* ==========================================
+   RESPONSIVE DESIGN - ECOTRACK
+   ========================================== */
+
+/* === TABLETS Y PANTALLAS PEQUEÑAS === */
+@media screen and (max-width: 1024px) {
+  .contenedor-map {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .izquierda-map,
+  .derecha-map {
+    order: 2;
+  }
+
+  .izquierda-map {
+    order: 1;
+  }
+
+  .derecha-map {
+    order: 3;
+  }
+
+  .contenedor-Login {
+    flex-direction: column;
+  }
+
+  .izquierda-Login {
+    width: 100%;
+    padding: 30px;
+    text-align: center;
+  }
+
+  .izquierda-Login h2 {
+    font-size: 30px;
+  }
+
+  .collage {
+    position: static;
+    width: 200px;
+    margin: 20px auto;
+    display: block;
+  }
+
+  .logo {
+    margin-bottom: 20px;
+  }
+
+  .derecha {
+    width: 100%;
+    border-left: none;
+    padding: 20px;
+  }
+
+  .login {
+    width: 90%;
+  }
+
+  .contenedor-base {
+    width: 80%;
+  }
+
+  .bton-keep {
+    width: 100%;
+  }
+}
+
+/* === TELEFONOS (max-width: 768px) === */
+@media screen and (max-width: 768px) {
+  /* HEADER */
+  .encabezado {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .encabezado h2 {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+  }
+
+  .encabezado ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    padding: 0;
+    margin: 0;
+  }
+
+  .encabezado ul li {
+    font-size: 0.8rem;
+  }
+
+  .menu {
+    padding: 4px 8px;
+  }
+
+  /* CARRUSEL */
+  .carousel {
+    height: 60vh;
+    min-height: 350px;
+  }
+
+  .carousel-content {
+    left: 5%;
+    right: 5%;
+    max-width: 90%;
+    top: 55%;
+  }
+
+  .carousel-content h1 {
+    font-size: clamp(1.8rem, 5vw, 2.8rem);
+  }
+
+  .carousel-content p {
+    font-size: 0.9rem;
+    max-width: 100%;
+  }
+
+  .carousel-team {
+    left: 5%;
+    right: 5%;
+    max-width: 90%;
+    top: 60%;
+  }
+
+  .carousel-team h1 {
+    font-size: 1.2rem;
+  }
+
+  .carousel-team p {
+    font-size: 0.8rem;
+  }
+
+  .btn {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+  }
+
+  .prev {
+    left: 10px;
+  }
+
+  .next {
+    right: 10px;
+  }
+
+  /* TARJETAS HOME */
+  .contenedor-tarjetas {
+    gap: 20px;
+    padding: 0 15px;
+  }
+
+  .tarjeta {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  /* VOLUNTARIADO */
+  .voluntariado {
+    width: 95%;
+    margin: 40px auto;
+  }
+
+  .voluntariado h1 {
+    font-size: 28px;
+  }
+
+  .contenedorVoluntariado {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .actividad {
+    width: 100%;
+    max-width: 350px;
+  }
+
+  .informacion {
+    padding: 20px;
+  }
+
+  /* POST PAGE */
+  .post-box input[type="text"] {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .post-box button {
+    width: 100%;
+  }
+
+  .post-box {
+    padding: 12px;
+  }
+
+  .custom-file-upload {
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+  }
+
+  .post-contenedor {
+    padding: 15px;
+  }
+
+  .feed {
+    width: 100%;
+  }
+
+  /* MAP */
+  .contenedor-map {
+    grid-template-columns: 1fr;
+    gap: 15px;
+    padding: 0 10px;
+  }
+
+  .contenedor-map main iframe {
+    height: 350px;
+  }
+
+  .izquierda-map,
+  .derecha-map {
+    padding: 15px;
+  }
+
+  .tituloMapa h2 {
+    font-size: 1.3rem;
+  }
+
+  /* ABOUT US */
+  .contenedor1about {
+    padding: 0 15px;
+    margin: 20px auto;
+  }
+
+  .about-heroo h1 {
+    font-size: 1.8rem;
+  }
+
+  .About-subtitulo {
+    font-size: 1rem;
+  }
+
+  .meetteam {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .fotoabout {
+    width: 80px;
+    height: 80px;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .nombreDescripcion h2 {
+    font-size: 1.1rem;
+  }
+
+  .about-carta {
+    padding: 20px;
+  }
+
+  /* FOOTER */
+  .footer-container {
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 20px 20px 20px;
+  }
+
+  .footer-section {
+    text-align: center;
+    min-width: unset;
+  }
+
+  .footer-links ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  /* FORMS */
+  .contenedor-base {
+    width: 90%;
+    padding: 25px 20px;
+  }
+
+  .contenedor-base h3 {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .cajita-texto,
+  .caja-texto {
+    padding: 12px;
+    font-size: 14px;
+    box-sizing: border-box;
+  }
+
+  .botoncito {
+    height: 40px;
+    font-size: 14px;
+    padding: 0 15px;
+  }
+
+  .formulario-log,
+  .Formulario-change {
+    width: 100%;
+  }
+
+  .formulario-log input,
+  .Formulario-change input {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  #formularioprueba {
+    gap: 6px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .input-code {
+    width: 32px;
+    height: 32px;
+    font-size: 18px;
+  }
+
+  /* TRACKER */
+  .tracker-container {
+    padding: 0 15px;
+  }
+
+  .status-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .action-form {
+    flex-direction: column;
+  }
+
+  .action-form select {
+    width: 100%;
+    min-width: unset;
+  }
+
+  .action-form button {
+    width: 100%;
+  }
+
+  .badges-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* HANDCRAFT */
+  .handcraft-container {
+    padding: 0 15px;
+  }
+
+  .handcraft-hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .filters-section {
+    gap: 8px;
+  }
+
+  .filter-btn {
+    padding: 8px 14px;
+    font-size: 0.8rem;
+  }
+
+  .tips-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .modal-content {
+    padding: 20px;
+    margin: 10px;
+  }
+
+  /* PROFILE */
+  .profile-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1.5rem;
+  }
+
+  .profile-avatar {
+    flex: unset;
+  }
+
+  .profile-avatar img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .profile-stats {
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+  }
+
+  .profile-info h1 {
+    font-size: 1.4rem;
+  }
+
+  .edit-profile-section {
+    padding: 1.5rem;
+  }
+
+  /* CHANGE PASSWORD */
+  .cuerpo-changepassword {
+    padding: 15px;
+  }
+
+  .bton-keep {
+    width: 100%;
+  }
+
+  .textoUnderline {
+    margin-top: 10px;
+  }
+
+  /* CREATE ACCOUNT */
+  .cuerpoCreateAccount {
+    padding: 15px;
+  }
+
+  /* REESTORE PASSWORD */
+  .Cuerpo-ReestorePAssword {
+    padding: 15px;
+  }
+
+  #texto {
+    font-size: 1.1rem;
+    text-align: center;
+  }
+
+  #tx-mail {
+    font-size: 0.9rem;
+  }
+
+  /* VOLUNTEER FORM */
+  #formulario_god {
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+
+  #formulario_god p {
+    width: 100%;
+    margin: 5px 0;
+  }
+
+  /* LOGIN PAGE */
+  .crear {
+    height: 40px;
+    font-size: 14px;
+  }
+
+  .login a {
+    font-size: 14px;
+  }
+
+  .Eco {
+    font-size: 14px;
+  }
+}
+
+/* === TELEFONOS MUY PEQUEÑOS (max-width: 480px) === */
+@media screen and (max-width: 480px) {
+  .encabezado ul {
+    gap: 4px;
+  }
+
+  .encabezado ul li {
+    font-size: 0.7rem;
+  }
+
+  .menu {
+    padding: 3px 6px;
+    font-size: 0.7rem;
+  }
+
+  .carousel {
+    height: 50vh;
+    min-height: 280px;
+  }
+
+  .carousel-content h1 {
+    font-size: 1.5rem;
+  }
+
+  .carousel-content p {
+    font-size: 0.75rem;
+  }
+
+  .hero-button {
+    padding: 10px 18px;
+    font-size: 0.8rem;
+  }
+
+  .btn {
+    width: 32px;
+    height: 32px;
+    font-size: 16px;
+  }
+
+  .prev {
+    left: 5px;
+  }
+
+  .next {
+    right: 5px;
+  }
+
+  .contenedor-base {
+    width: 95%;
+    padding: 20px 15px;
+  }
+
+  .badges-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .badge-item .badge-icon {
+    font-size: 1.8rem;
+  }
+
+  .badge-item p {
+    font-size: 0.8rem;
+  }
+
+  .badge-item small {
+    font-size: 0.65rem;
+  }
+
+  .profile-stats div {
+    font-size: 0.85rem;
+  }
+
+  .profile-stats span {
+    font-size: 1.1rem;
+  }
+
+  .about-carta {
+    padding: 15px;
+  }
+
+  .about-carta h2 {
+    font-size: 1.2rem;
+  }
+
+  .about-list {
+    padding-left: 15px;
+  }
+
+  .about-list li {
+    font-size: 0.9rem;
+  }
+
+  .contenedor-map main iframe {
+    height: 250px;
+  }
+
+  .card {
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+
+  .izquierda-map h2,
+  .derecha-map h2 {
+    font-size: 1.1rem;
+  }
+
+  .tituloMapa p {
+    font-size: 0.85rem;
+  }
+
+  .tracker-title {
+    font-size: 1.5rem;
+  }
+
+  .user-badge {
+    font-size: 2.5rem;
+    padding: 10px;
+  }
+
+  .user-info h2 {
+    font-size: 1.2rem;
+  }
+
+  .points-text {
+    font-size: 0.95rem;
+  }
+
+  .history-list li {
+    font-size: 0.8rem;
+    padding: 8px 10px;
+    flex-wrap: wrap;
+  }
+
+  .handcraft-hero h1 {
+    font-size: 1.5rem;
+  }
+
+  .filter-btn {
+    padding: 6px 10px;
+    font-size: 0.7rem;
+  }
+
+  .project-info h3 {
+    font-size: 1rem;
+  }
+
+  .project-info p {
+    font-size: 0.8rem;
+  }
+
+  .tip-card h3 {
+    font-size: 0.95rem;
+  }
+
+  .modal-body h2 {
+    font-size: 1.2rem;
+  }
+
+  .modal-body ol {
+    padding-left: 15px;
+    font-size: 0.9rem;
+  }
+}
