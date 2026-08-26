@@ -9,20 +9,30 @@
 <body class="cuerpo">
 
     <header class="encabezado">
+        <div class="header-left">
+            <h2>EcoTrack</h2>
+        </div>
 
-        <h2>EcoTrack</h2>
+    <!-- Botón hamburguesa -->
+        <button class="menu-hamburguesa" id="menuToggle" aria-label="Menú">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
 
+    <!-- Menú de navegación - CAMBIA la clase de nav a "nav-menu" -->
+        <nav class="nav-menu" id="navMenu">
             <ul>
                 <li><a href="Home.html" class="menu">Home</a></li>
                 <li><a href="PostPage.html" class="menu">News</a></li>
                 <li><a href="handcraftPage.html" class="menu">EcoCraft</a></li>
                 <li><a href="map.html" class="menu">Map</a></li>
                 <li><a href="AboutUs.html" class="menu">About Us</a></li>
-                <li><a href="User.html" class="menu active">Profile</a></li>
+                <li><a href="User.html" class="menu">Profile</a></li>
             </ul>
-            
-
+        </nav>
     </header>
+    
     <main class="tracker-container">
     <h1 class="tracker-title">Eco Action Tracker</h1>
 
@@ -120,6 +130,7 @@
 
   <!-- Script con la lógica del sistema -->
   <script src="../assets/Js/tracker.js"></script>
+  <script src="../assets/Js/Menu.js"></script>
     
 </body>
 </html>
