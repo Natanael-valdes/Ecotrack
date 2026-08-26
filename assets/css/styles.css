@@ -2566,11 +2566,6 @@ input:focus{
     position: relative;
 }
 
-.header-left h2 {
-    color: white;
-    margin: 0;
-    font-size: 1.3rem;
-}
 
 /* Botón hamburguesa - OCULTO EN DESKTOP */
 .menu-hamburguesa {
